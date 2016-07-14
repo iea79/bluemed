@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.fittext.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+
+		<div class="container_center">
+			<a href="/" class="logo"><img src="img/logo2.png" alt=""></a>
+
+			<div class="lang">
+				<a href="#">En</a>
+				<div class="lang_drop">
+					<a href="#">Cn</a>
+					<a href="#">Fr</a>
+					<a href="#">Esp</a>
+				</div>
+			</div>
+
+			<!-- begin navbar top__menu -->
+			<ul class="navbar top__menu">
+				<li class="navabr__item">
+					<a href="#" class="navabr__link">Who we are</a>
+				</li>
+				<li class="navabr__item">
+					<a href="#" class="navabr__link">Our equipment</a>
+				</li>
+				<li class="navabr__item">
+					<a href="#" class="navabr__link">Contact us</a>
+				</li>
+			</ul>
+			<!-- end navbar top__menu -->
+
+		</div>
+
+	</header><!-- .header-->
+
+	<main class="main__content">
+	
+		<div class="title_page_wrap" style="background-image: url('img/title_bg3.jpg')">
+			<div class="title_page">Contact us</div>
+		</div>
+		
+		<div class="map_box">
+							
+			<div id="blu_med_map" class="map"></div>
+
+			<div class="map__label">
+				<p>Adress: Carrer dels Escultores Claperos, 2J</p>
+				<p>Tel.: +34 606-553-656</p>
+				<p>E-mail: info@bluemed.com</p> 
+			</div>
+
+			<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyApMGitD0JBNexZOL6VioySmY2NRy-HKLQ'></script> 
+			 
+			<script> 
+			    google.maps.event.addDomListener(window, 'load', init);
+			    var map;
+			    function init() {
+			        var mapOptions = {
+			            center: new google.maps.LatLng(41.409, 2.175),
+			            zoom: 15,
+			            zoomControl: true,
+			            zoomControlOptions: {
+			                style: google.maps.ZoomControlStyle.SMALL,
+			            },
+			            disableDoubleClickZoom: true,
+			            mapTypeControl: false,
+			            scaleControl: true,
+			            scrollwheel: false,
+			            panControl: true,
+			            streetViewControl: true,
+			            draggable : false,
+			            overviewMapControl: true,
+			            overviewMapControlOptions: {
+			                opened: false,
+			            },
+			            mapTypeId: google.maps.MapTypeId.ROADMAP,
+			        }
+			        var mapElement = document.getElementById('blu_med_map');
+			        var map = new google.maps.Map(mapElement, mapOptions);
+			        var locations = [
+			['BlueMed', 'undefined', '+34 606-553-656', 'info@bluemed.com', 'undefined', 41.41028439999999, 2.1903264000000036]
+			        ];
+			        for (i = 0; i < locations.length; i++) {
+						if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+						if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+						if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+			           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+			           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+			            marker = new google.maps.Marker({
+			                icon: markericon,
+			                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+			                map: map,
+			                title: locations[i][0],
+			                desc: description,
+			                tel: telephone,
+			                email: email,
+			                web: web
+			            });
+			link = '';     }
+
+			}
+			</script>
+
+		</div>
+
+		<!-- begin pre_footer -->
+		<div class="pre_footer">
+			
+			<div class="container_center">
+
+
+				<form action="#">
+					<div class="form_title">Do you have some quastions? Write a message</div>
+					
+					<!-- begin grid  -->
+					<div class="grid">
+						<div class="grid__wrapper">
+							<div class="grid__item">
+								<input type="text" name="" id="" placeholder="Your name">
+								<div class="error"></div>
+							</div>
+						</div>
+						<div class="grid__wrapper">
+							<div class="grid__item">
+								<!-- Добавить к input класс input_error при ошибке -->
+								<input class="input_error" type="tel" name="" id="" placeholder="Phone number">
+								<div class="error">Error. Number is incorrect</div>
+							</div>
+						</div>
+					</div>
+					<!-- end grid  -->
+
+					<textarea placeholder="Your text"></textarea>
+
+					<button class="btn">Send >></button>
+
+				</form>
+				
+			</div>
+
+		</div>
+		<!-- end pre_footer -->
+
+
+	</main><!-- .content -->
+
+</div><!-- .wrapper -->
+
+	<footer class="footer">
+		
+		<div class="container_center">
+			
+			<div class="soc">
+				<div class="label">Follow us</div>
+				<a href="#" class="icon_twit"></a>
+				<a href="#" class="icon_fb"></a>
+				<a href="#" class="icon_inst"></a>
+				<a href="#" class="icon_yuot"></a>
+			</div>
+
+			<div class="copy">
+				<a href="tel: +34 606-553-656">+34 606-553-656</a>
+				<a href="mailto: info@bluemed.com">info@bluemed.com</a>
+			</div>
+
+		</div>
+
+	</footer><!-- .footer -->
+
+</body>
+</html>
