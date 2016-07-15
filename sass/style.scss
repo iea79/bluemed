@@ -316,6 +316,11 @@ textarea {
 	padding-left: 220px;
 	margin-top: -6px;
 	margin-bottom: 39px;
+	@media (max-width: 640px) {
+		margin-top: 3px;
+		padding-left: 10px;
+		margin-bottom: 25px;
+	}
 	li {
 		display: inline-block;
 		&:not(:first-child) {
@@ -323,6 +328,8 @@ textarea {
 				content: '/';
 				display: inline-block;
 				color: #b3b3b3;
+				font-size: 12px;
+				margin-right: 5px;
 			}
 		}
 		&:last-child {
