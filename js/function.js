@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 /*
 // http://masscode.ru/index.php/k2/item/30-lifirstletter
-liFirstLetter - jQuery First Letter
+// liFirstLetter - jQuery First Letter
 */
 (function($){
 	$.fn.liFirstLetter = function(params){

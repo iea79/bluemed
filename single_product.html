@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="css/uikit.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/slick.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.fittext.js"></script>
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+
+		<div class="container_center">
+			<a href="/" class="logo"><img src="img/logo2.png" alt=""></a>
+
+			<div class="lang">
+				<a href="#">En</a>
+				<div class="lang_drop">
+					<a href="#">Cn</a>
+					<a href="#">Fr</a>
+					<a href="#">Esp</a>
+				</div>
+			</div>
+
+			<!-- begin navbar top__menu -->
+			<ul class="navbar top__menu">
+				<li class="navabr__item">
+					<a href="#" class="navabr__link">Who we are</a>
+				</li>
+				<li class="navabr__item">
+					<a href="#" class="navabr__link">Our equipment</a>
+				</li>
+				<li class="navabr__item">
+					<a href="#" class="navabr__link">Contact us</a>
+				</li>
+			</ul>
+			<!-- end navbar top__menu -->
+
+		</div>
+
+	</header><!-- .header-->
+
+	<main class="main__content">
+	
+		<div class="page__content">
+			
+			<div class="container_center">
+
+				<!-- begin breadcrumb -->
+				<ul class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Our equipment</a></li>
+					<li><a href="#">Image diagnostic</a></li>
+					<li><a href="#">Oncology diagnostic ES-524M (example)</a></li>
+				</ul>
+				<!-- end breadcrumb -->
+				
+				<!-- begin single__product -->
+				<div class="single__product">
+					
+					<!-- begin product__slider -->
+					<div class="product__slider">
+						
+						<div class="big_img_slide">
+							<div class="slide_item"><img src="img/sl_big.jpg" alt=""></div>
+							<div class="slide_item"><img src="img/sl_big.jpg" alt=""></div>
+							<div class="slide_item"><img src="img/sl_big.jpg" alt=""></div>
+							<div class="slide_item"><img src="img/sl_big.jpg" alt=""></div>
+						</div>
+
+						<div class="prev_img_slide">
+							<div class="slide_item"><img src="img/sl_sm.jpg" alt=""></div>
+							<div class="slide_item"><img src="img/sl_sm.jpg" alt=""></div>
+							<div class="slide_item"><img src="img/sl_sm.jpg" alt=""></div>
+							<div class="slide_item"><img src="img/sl_sm.jpg" alt=""></div>
+						</div>
+
+						<script>
+							$('.big_img_slide').slick({
+								slidesToShow: 1,
+								slidesToScroll: 1,
+								arrows: false,
+								dots: false,
+								fade: true,
+								asNavFor: '.prev_img_slide'
+							});
+							$('.prev_img_slide').slick({
+								slidesToShow: 4,
+								slidesToScroll: 1,
+								asNavFor: '.big_img_slide',
+								arrows: false,
+								dots: false,
+								centerMode: false,
+								focusOnSelect: true
+							});
+						</script>
+
+					</div>
+					<!-- end product__slider -->
+
+				</div>
+				<!-- end single__product -->
+
+				<div class="product__title">Oncology diagnostic ES-524M (example)</div>
+
+				<div class="product__description">
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula hendrerit nisi. Vivamus ullamcorper urna lacus. Quisque accumsan dolor ex, a tempor justo sodales eu. Integer bibendum leo quis ligula rutrum, quis iaculis dui</p>
+
+					<ul class="list">
+						<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+						<li>Consectetur adipiscing elit adipiscing elit</li>
+						<li>Proin vehicula hendrerit nisi</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Consectetur adipiscing elit</li>
+						<li>Proin vehicula hendrerit nisi</li>
+					</ul>
+
+				</div>
+
+				<!-- begin tecnical__swicher -->
+				<div class="tecnical__swicher">
+					
+					<ul class="tecnical__swicher_tab" data-uk-switcher="{connect:'#my-id'}">
+					    <li><a href="">Technical parameters</a></li>
+					    <li><a href="">Application</a></li>
+					    <li><a href="">Advantages</a></li>
+					</ul>
+
+					<ul id="my-id" class="uk-switcher tabs__content">
+					    <li  class="tabs__content_item">
+						    <div class="grid">					    	
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    </div>
+					    </li>
+					    <li  class="tabs__content_item">
+					    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nesciunt, saepe aspernatur quibusdam dolor ullam praesentium corrupti, fuga qui porro tempora doloribus possimus alias ex eligendi sapiente enim. Molestias, in!</p>
+						    <div class="grid">					    	
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    </div>
+					    </li>
+					    <li  class="tabs__content_item">
+						    <div class="grid">					    	
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    	<ul class="list">
+									<li>Lorem ipsum dolor sit amet  dolor sit amet</li>
+									<li>Consectetur adipiscing elit adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Proin vehicula hendrerit nisi</li>
+						    	</ul>
+						    </div>
+					    </li>
+					</ul>					
+
+				</div>
+				<!-- end tecnical__swicher -->
+
+			</div>
+
+		</div>
+
+		<!-- begin pre_footer -->
+		<div class="pre_footer">
+			
+			<div class="container_center">
+
+
+				<form action="#">
+					<div class="form_title">Do you have some quastions? Write a message</div>
+					
+					<!-- begin grid  -->
+					<div class="grid">
+						<div class="grid__wrapper">
+							<div class="grid__item">
+								<input type="text" name="" id="" placeholder="Your name">
+								<div class="error"></div>
+							</div>
+						</div>
+						<div class="grid__wrapper">
+							<div class="grid__item">
+								<!-- Добавить к input класс input_error при ошибке -->
+								<input class="input_error" type="tel" name="" id="" placeholder="Phone number">
+								<div class="error">Error. Number is incorrect</div>
+							</div>
+						</div>
+					</div>
+					<!-- end grid  -->
+
+					<textarea placeholder="Your text"></textarea>
+
+					<button class="btn">Send >></button>
+
+				</form>
+				
+			</div>
+
+		</div>
+		<!-- end pre_footer -->
+
+
+	</main><!-- .content -->
+
+</div><!-- .wrapper -->
+
+	<footer class="footer">
+		
+		<div class="container_center">
+			
+			<div class="soc">
+				<div class="label">Follow us</div>
+				<a href="#" class="icon_twit"></a>
+				<a href="#" class="icon_fb"></a>
+				<a href="#" class="icon_inst"></a>
+				<a href="#" class="icon_yuot"></a>
+			</div>
+
+			<div class="copy">
+				<a href="tel: +34 606-553-656">+34 606-553-656</a>
+				<a href="mailto: info@bluemed.com">info@bluemed.com</a>
+			</div>
+
+		</div>
+
+	</footer><!-- .footer -->
+
+</body>
+</html>
