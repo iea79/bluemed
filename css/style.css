@@ -803,6 +803,9 @@ textarea {
 .product__description .list {
   margin: 45px 0;
 }
+.product__description p + p {
+  padding-top: 25px;
+}
 
 .tecnical__swicher .list {
   margin-left: 5%;

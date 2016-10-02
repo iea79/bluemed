@@ -888,6 +888,9 @@ textarea {
 	.list {
 		margin: 45px 0;
 	}
+	p+p {
+		padding-top: 25px;
+	}
 }
 
 .tecnical__swicher {
